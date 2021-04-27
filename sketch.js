@@ -22,7 +22,7 @@ function setup(){
 
   mouse=createSprite(100,600);
   mouse.addAnimation("mouse standing",mouseImg1);
-  mouse.scale=0.15;
+  mouse.scale=0.14;
 }
 
 function draw() {
