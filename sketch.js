@@ -29,15 +29,18 @@ function draw() {
 
     background(backgroundImg);
     //Write condition here to evalute if tom and jerry collide
-   if(
+  if(
     cat.x-mouse.x<(cat.width-mouse.width)/2){
       cat.velocityX=0;
       cat.addAnimation("happyCat",catImg3);
+      cat.x=300;
+      cat.scale=0.2;
       cat.changeAnimation("happyCat");
       
       
       mouse.addAnimation("happyMouse",mouseImg3);
       mouse.changeAnimation("happyMouse");
+      mouse.scale=0.15;
 
     }
     drawSprites();
